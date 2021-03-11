@@ -1,0 +1,49 @@
+.shopping-item {
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0px 0px 10px 0px $box-shadow-color;
+    cursor: pointer;
+  }
+
+  > * {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 22px;
+    background-color: $bg-color-1;
+    color: $font-color-1;
+    padding: 5px;
+  }
+
+  .price {
+    font-size: 20px;
+    background-color: $bg-color-1;
+    color: $font-color-1;
+    padding: 12px;
+    box-shadow: 0px 0px 5px 0px $box-shadow-color;
+
+    &.added {
+      background-color: $bg-color-3;
+      color: $font-color-2;
+    }
+  }
+
+  .action {
+    font-size: 16px;
+    background-color: $bg-color-4;
+    color: $font-color-2;
+    text-align: center;
+    padding: 12px;
+
+    &:after {
+      content: 'Add to Shopping Bag';
+    }
+
+    &.added:after {
+      color: $font-color-3;
+      content: 'Remove from Shopping Bag';
+    }
+  }
+}

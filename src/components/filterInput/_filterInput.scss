@@ -1,0 +1,18 @@
+.filter-input {
+  font-size: 14px;
+  background-color: $bg-color-1;
+  color: $font-color-1;
+
+  input {
+    border: 1px solid $input-border-color;
+    border-radius: 0;
+    width: 220px;
+    height: 35px;
+    padding: 0 10px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid $input-border-color;
+    }
+  }
+}

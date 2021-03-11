@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Components Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="flex-center">
+      <div class="container flex-center">
+        <shopping-bag class="flex-grow-1" />
+      </div>
+    </header>
+
+    <section class="flex-center">
+      <div class="container">
+        <div class="title">
+          <h1>In Stock</h1>
+          <filter-input />
+        </div>
+        <shopping-view />
+      </div>
+    </section>
+
+    <footer class="flex-center">
+      <div class="container">
+        <p>FE Challenge by Chua Kang Ming</p>
+      </div>
+    </footer>
+
+    <div class="wide-screen-warning flex-center">
+      <div>I look better in a wide window ;)</div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

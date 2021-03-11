@@ -1,0 +1,42 @@
+[
+  {
+    "modelClass": "Gundam 02",
+    "version": "Unicorn",
+    "price": {
+      "amount": "29500.00",
+      "currency": "EUR",
+      "locale": "de-DE"
+    },
+    "imagePath": "/assets/Unicorn.jpg"
+  },
+  {
+    "modelClass": "Gundam 00",
+    "version": "Kyrios",
+    "price": {
+      "amount": "31900.50",
+      "currency": "EUR",
+      "locale": "de-DE"
+    },
+    "imagePath": "/assets/Kyrios.jpg"
+  },
+  {
+    "modelClass": "Gundam 02",
+    "version": "Unicorn limited",
+    "price": {
+      "amount": "38350.00",
+      "currency": "EUR",
+      "locale": "de-DE"
+    },
+    "imagePath": "/assets/Unicorn.jpg"
+  },
+  {
+    "modelClass": "Gundam 00",
+    "version": "Kyrios limited",
+    "price": {
+      "amount": "43800.70",
+      "currency": "EUR",
+      "locale": "de-DE"
+    },
+    "imagePath": "/assets/Kyrios.jpg"
+  }
+]

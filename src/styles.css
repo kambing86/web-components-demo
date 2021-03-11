@@ -1,0 +1,198 @@
+body,
+html {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  height: 80px;
+}
+
+header .container {
+  width: 1024px;
+  align-items: baseline;
+}
+
+header .container img {
+  margin-right: 50px;
+}
+
+section .container {
+  width: 1024px;
+  padding: 20px 0;
+}
+
+section .container .title {
+  width: 918px;
+  margin: 1rem auto;
+}
+
+section .container h1 {
+  font-size: 24px;
+  background-color: #fff;
+  color: #333;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0;
+}
+
+section .container filter-input {
+  float: right;
+}
+
+footer {
+  font-size: 12px;
+  color: #999;
+}
+
+footer .container {
+  width: 918px;
+}
+
+.wide-screen-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+body {
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .wide-screen-warning {
+    display: none;
+  }
+  body {
+    overflow: auto;
+  }
+}
+
+.shopping-view .container {
+  width: 918px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shopping-view .spinner {
+  width: 100%;
+  height: 100px;
+}
+
+.shopping-view .item {
+  width: 295px;
+  margin: 5px 0;
+}
+
+.shopping-view .not-found {
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.shopping-view .not-found:after {
+  content: 'No cars with that name were found :(';
+}
+
+.shopping-item {
+  flex-direction: column;
+}
+
+.shopping-item:hover {
+  box-shadow: 0px 0px 10px 0px #888;
+  cursor: pointer;
+}
+
+.shopping-item > * {
+  width: 100%;
+}
+
+.shopping-item .name {
+  font-size: 22px;
+  background-color: #fff;
+  color: #333;
+  padding: 5px;
+}
+
+.shopping-item .price {
+  font-size: 20px;
+  background-color: #fff;
+  color: #333;
+  padding: 12px;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+.shopping-item .price.added {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.shopping-item .action {
+  font-size: 16px;
+  background-color: #3c3c3c;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+
+.shopping-item .action:after {
+  content: 'Add to Shopping Bag';
+}
+
+.shopping-item .action.added:after {
+  color: #999;
+  content: 'Remove from Shopping Bag';
+}
+
+.shopping-bag {
+  text-align: right;
+}
+
+.shopping-bag img {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.filter-input {
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+.filter-input input {
+  border: 1px solid #999;
+  border-radius: 0;
+  width: 220px;
+  height: 35px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.filter-input input:focus {
+  border: 1px solid #999;
+}
